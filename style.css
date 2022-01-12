@@ -1,11 +1,13 @@
-@import "css/main.css";
+/* Defalut setting */
+@import "reset.css";
 
-html,
-body {
-  margin: 0;
-  height: 100vh;
-}
+/* Main page */
+@import "css/main.css";
 
 .hidden {
   display: none;
+}
+
+body {
+  overflow: hidden;
 }

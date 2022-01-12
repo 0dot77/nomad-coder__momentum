@@ -1,6 +1,7 @@
 .screen-main {
   display: flex;
   position: relative;
+  font-family: "Abril Fatface", cursive;
 }
 
 .screen-components {
@@ -8,15 +9,61 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
+  vertical-align: middle;
   width: 100%;
-  top: 50%;
-  margin-top: 300px;
+  /* top: 50%; */
   z-index: 1;
+}
+
+/* Clock Styling */
+.screen-components__clock {
+  font-size: 100px;
+  margin-top: 50px;
+}
+
+/* Login & Todo list */
+input::placeholder,
+button {
+  font-family: "Abril Fatface", cursive;
+  font-size: 9px;
+  text-align: center;
+}
+
+/* Login form */
+.screen-components__login-form {
+  margin-top: 300px;
+}
+
+/* Todo list */
+
+/* Quotes styling */
+
+.screen-components__quotes {
+  margin-top: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-components__quotes > span {
+  display: block;
+  padding: 10px 10px;
+  font-size: 20px;
+  color: white;
+  box-shadow: 10px 5px 5px whitesmoke;
+  border-radius: 20px;
+}
+
+.screen-components__quotes > span:nth-child(2) {
+  margin-top: 50px;
+  font-size: 50px;
 }
 
 .screen-main__img {
   position: absolute;
-  opacity: 80%;
+  opacity: 90%;
   z-index: 0;
 }

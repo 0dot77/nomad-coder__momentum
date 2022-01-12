@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Momentum App</title>
 </head>
@@ -12,17 +13,17 @@
 <body>
     <main class="screen-main">
         <div class="screen-components">
-            <form id="login-form" class="hidden">
+            <h2 class="screen-components__clock" id="clock">00:00:00</h2>
+            <form id="login-form" class="hidden screen-components__login-form">
                 <input required maxlength="15" type="text" placeholder="Write down your name" />
                 <button>Log in</button>
             </form>
-            <h2 id="clock">00:00:00</h2>
-            <h1 id="greeting" class="hidden"></h1>
+            <h1 id="greeting" class="hidden screen-components__login-form"></h1>
             <form id="todo-form">
                 <input type="text" placeholder="Write a To Do and Press" required />
             </form>
             <ul id="todo-list"></ul>
-            <div id="quote">
+            <div class="screen-components__quotes" id="quote">
                 <span></span>
                 <span></span>
             </div>

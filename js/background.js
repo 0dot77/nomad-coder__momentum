@@ -11,7 +11,6 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
 bgImage.style.width = "100%";
 bgImage.style.height = "100%";
-console.dir(bgImage);
 
 
 imgSite.appendChild(bgImage);
