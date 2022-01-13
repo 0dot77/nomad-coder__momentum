@@ -14,15 +14,17 @@
     <main class="screen-main">
         <div class="screen-components">
             <h2 class="screen-components__clock" id="clock">00:00:00</h2>
-            <form id="login-form" class="hidden screen-components__login-form">
-                <input required maxlength="15" type="text" placeholder="Write down your name" />
-                <button>Log in</button>
-            </form>
-            <h1 id="greeting" class="hidden screen-components__login-form"></h1>
-            <form id="todo-form">
-                <input type="text" placeholder="Write a To Do and Press" required />
-            </form>
-            <ul id="todo-list"></ul>
+            <div class="screen-components__user-input">
+                <form id="login-form" class="hidden screen-components__login-form">
+                    <input required maxlength="15" type="text" placeholder="Write down your name" />
+                    <button>Log in</button>
+                </form>
+                <h1 id="greeting" class="hidden screen-components__login-form"></h1>
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a To Do and Press" required />
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
             <div class="screen-components__quotes" id="quote">
                 <span></span>
                 <span></span>
