@@ -1,44 +1,92 @@
 .screen-main {
   display: flex;
   position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
   font-family: "Abril Fatface", cursive;
 }
 
+/* to-do parts */
+
+#todo-form > input {
+  display: block;
+  position: absolute;
+  bottom: 60%;
+  left: 65%;
+  width: 300px;
+  height: 30px;
+}
+
+#todo-list {
+  display: block;
+  position: absolute;
+  left: 70%;
+}
+
+/* extra */
+
 .screen-components {
   display: flex;
+  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  vertical-align: middle;
-  width: 100%;
-  /* top: 50%; */
-  z-index: 1;
+  border-radius: 10%;
+  width: 500px;
+  height: 60%;
+  left: 5%;
+  border: 10px solid black;
+}
+
+.screen-components:hover {
+  animation: shadow 1s ease-out forwards;
+}
+
+@keyframes shadow {
+  0% {
+  }
+
+  50% {
+    box-shadow: 15px 10px 10px white;
+  }
+
+  100% {
+    box-shadow: 15px 10px 10px white;
+  }
 }
 
 /* Clock Styling */
 .screen-components__clock {
   font-size: 100px;
   margin-top: 100px;
+  color: white;
 }
 
 /* User inputs */
 
 .screen-components__user-input {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  margin-top: 300px;
   width: 100%;
-  justify-content: center;
 }
 
-#todo-list > li {
-  /* 그리드 맞추는 부분부터 시작하기 */
+.screen-components__user-input > h1 {
+  font-size: 50px;
 }
 
 .screen-components__login-form {
-  margin-right: 50px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.screen-components__login-form > input {
+  width: 200px;
+  height: 50px;
+}
+
+.screen-components__login-form > button {
+  width: 100px;
+  height: 57.5px;
 }
 
 input::placeholder,
@@ -64,19 +112,9 @@ button {
   padding: 10px 10px;
   font-size: 20px;
   color: white;
-  box-shadow: 10px 5px 5px whitesmoke;
-  border-radius: 20px;
 }
 
 .screen-components__quotes > span:nth-child(2) {
   margin-top: 50px;
   font-size: 50px;
-}
-
-/* Image styling */
-
-.screen-main__img {
-  position: absolute;
-  opacity: 90%;
-  z-index: 0;
 }
