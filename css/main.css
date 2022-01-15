@@ -18,10 +18,33 @@
   height: 30px;
 }
 
+#todo-form > input::placeholder {
+  font-size: 15px;
+}
+
+.screen-components__todo-list {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  top: 150px;
+  right: 50px;
+  text-align: center;
+  border: 1px solid blue;
+}
+
 #todo-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+#todo-list > li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#todo-list > li > button {
   position: absolute;
-  left: 70%;
+  left: 100px;
 }
 
 /* extra */
