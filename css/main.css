@@ -24,10 +24,9 @@
 
 .screen-components__todo-list {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 50%;
+  height: 400px;
   top: 150px;
-  right: 50px;
   text-align: center;
   border: 1px solid blue;
 }
@@ -38,13 +37,12 @@
 }
 
 #todo-list > li {
-  position: relative;
   margin-bottom: 10px;
 }
 
 #todo-list > li > button {
   position: absolute;
-  left: 100px;
+  left: 30%;
 }
 
 /* extra */
