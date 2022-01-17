@@ -1,86 +1,26 @@
 .screen-main {
   display: flex;
-  position: relative;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
   font-family: "Abril Fatface", cursive;
+
+  /* 백그라운드 색깔 부분 */
+  background: linear-gradient(45deg, blue, yellow);
 }
-
-/* to-do parts */
-
-#todo-form > input {
-  display: block;
-  position: absolute;
-  bottom: 60%;
-  left: 65%;
-  width: 300px;
-  height: 30px;
-}
-
-#todo-form > input::placeholder {
-  font-size: 15px;
-}
-
-.screen-components__todo-list {
-  position: relative;
-  width: 50%;
-  height: 400px;
-  top: 150px;
-  text-align: center;
-  border: 1px solid blue;
-}
-
-#todo-list {
-  display: flex;
-  flex-direction: column;
-}
-
-#todo-list > li {
-  margin-bottom: 10px;
-}
-
-#todo-list > li > button {
-  position: absolute;
-  left: 30%;
-}
-
-/* extra */
 
 .screen-components {
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10%;
-  width: 500px;
-  height: 60%;
-  left: 5%;
-  border: 10px solid black;
-}
-
-.screen-components:hover {
-  animation: shadow 1s ease-out forwards;
-}
-
-@keyframes shadow {
-  0% {
-  }
-
-  50% {
-    box-shadow: 15px 10px 10px white;
-  }
-
-  100% {
-    box-shadow: 15px 10px 10px white;
-  }
+  width: 600px;
+  height: 100%;
 }
 
 /* Clock Styling */
 .screen-components__clock {
   font-size: 100px;
-  margin-top: 100px;
   color: white;
 }
 
@@ -92,28 +32,41 @@
 
 .screen-components__user-input > h1 {
   font-size: 50px;
+  animation: user-input__animation 2s ease-out infinite;
+}
+
+@keyframes user-input__animation {
+  0% {
+    border-color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
 }
 
 .screen-components__login-form {
   position: relative;
-  top: 100px;
   text-align: center;
+  top: 100px;
 }
 
 .screen-components__login-form > input {
   width: 200px;
-  height: 50px;
+  height: 22px;
 }
 
 .screen-components__login-form > button {
   width: 100px;
-  height: 57.5px;
+  /* height: 25px; */
 }
 
 input::placeholder,
 button {
   font-family: "Abril Fatface", cursive;
-  font-size: 9px;
+  font-size: 15px;
   opacity: 50%;
   text-align: center;
 }
@@ -129,7 +82,6 @@ button {
 }
 
 .screen-components__quotes > span {
-  display: block;
   padding: 10px 10px;
   font-size: 20px;
   color: white;
@@ -138,4 +90,13 @@ button {
 .screen-components__quotes > span:nth-child(2) {
   margin-top: 50px;
   font-size: 50px;
+}
+
+i {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+i:hover {
+  color: red;
 }

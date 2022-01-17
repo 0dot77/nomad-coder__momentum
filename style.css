@@ -3,6 +3,7 @@
 
 /* Main page */
 @import "css/main.css";
+@import "css/todo.css";
 
 .hidden {
   display: none;

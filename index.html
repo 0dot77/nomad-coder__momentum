@@ -12,7 +12,7 @@
 
 <body>
     <main class="screen-main">
-        <div class="screen-components">
+        <div class="screen-components" id="section-first">
             <h2 class="screen-components__clock" id="clock">00:00:00</h2>
             <div class="screen-components__user-input">
                 <form id="login-form" class="hidden screen-components__login-form">
@@ -29,20 +29,24 @@
                 <span></span>
                 <span></span>
             </div>
+            <i id="right-arrow" class="fas fa-arrow-circle-right"></i>
         </div>
+    </main>
+    <section class="todo-section">
         <form id="todo-form">
             <input type="text" placeholder="Write a To Do and Press" required />
         </form>
         <div class="screen-components__todo-list">
             <ul id="todo-list"></ul>
         </div>
-    </main>
+    </section>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="https://kit.fontawesome.com/6fa64eb14f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
