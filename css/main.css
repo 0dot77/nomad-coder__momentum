@@ -1,11 +1,11 @@
 .screen-main {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   font-family: "Abril Fatface", cursive;
-
-  /* 백그라운드 색깔 부분 */
   background: linear-gradient(45deg, blue, yellow);
 }
 
@@ -14,7 +14,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  position: relative;
+  width: 500px;
   height: 100%;
 }
 
@@ -92,8 +93,9 @@ button {
   font-size: 50px;
 }
 
-i {
-  margin-top: 50px;
+#right-arrow {
+  position: absolute;
+  top: 800px;
   font-size: 25px;
 }
 
