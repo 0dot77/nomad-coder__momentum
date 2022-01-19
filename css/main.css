@@ -1,22 +1,19 @@
 .screen-main {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-  font-family: "Abril Fatface", cursive;
-  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
 }
 
 .screen-components {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   width: 500px;
-  height: 100%;
+  height: 702px;
 }
 
 /* Clock Styling */
@@ -38,9 +35,7 @@
 }
 
 .screen-components__login-form {
-  position: relative;
   text-align: center;
-  top: 100px;
 }
 
 .screen-components__login-form > input {
@@ -63,7 +58,6 @@ button {
 
 /* Quotes styling */
 .screen-components__quotes {
-  margin-top: 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -78,13 +72,10 @@ button {
 }
 
 .screen-components__quotes > span:nth-child(2) {
-  margin-top: 50px;
   font-size: 50px;
 }
 
 #right-arrow {
-  position: absolute;
-  top: 800px;
   font-size: 25px;
 }
 

@@ -4,6 +4,7 @@
 /* Main page */
 @import "css/main.css";
 @import "css/todo.css";
+@import "css/footer.css";
 
 .hidden {
   display: none;
@@ -11,5 +12,9 @@
 
 html,
 body {
+  overflow-x: hidden;
+  overflow-y: hidden;
   height: 100%;
+  font-family: "Abril Fatface", cursive;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
 }

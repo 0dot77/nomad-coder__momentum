@@ -1,0 +1,13 @@
+footer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  bottom: 25px;
+  right: 10px;
+  height: 100%;
+}
+
+#weather > span {
+  text-shadow: -5px 5px #558abb;
+}

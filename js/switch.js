@@ -10,7 +10,7 @@ screenComponents.style.left = "200px";
 
 function handdleScreenComponents() {
     screenComponents.style.right = "1500px";
-    screenComponents.style.left = "-1000px";
+    screenComponents.style.left = "-3000px";
     todoSection.style.left = "-300px";
 }
 
