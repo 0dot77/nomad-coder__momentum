@@ -6,7 +6,7 @@
   height: 100%;
   width: 100%;
   font-family: "Abril Fatface", cursive;
-  background: linear-gradient(45deg, blue, yellow);
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
 }
 
 .screen-components {
@@ -33,19 +33,8 @@
 
 .screen-components__user-input > h1 {
   font-size: 50px;
-  animation: user-input__animation 2s ease-out infinite;
-}
-
-@keyframes user-input__animation {
-  0% {
-    border-color: yellow;
-  }
-  50% {
-    color: blue;
-  }
-  100% {
-    color: red;
-  }
+  color: skyblue;
+  text-shadow: 5px 5px #558abb;
 }
 
 .screen-components__login-form {

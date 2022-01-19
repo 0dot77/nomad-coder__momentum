@@ -2,60 +2,57 @@
 
 .todo-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 500px;
-  bottom: 129px;
   height: 100%;
 }
 
 .todo-section__form {
-  position: absolute;
-  bottom: 500px;
+  margin-top: 250px;
+  margin-bottom: 50px;
 }
 
 #todo-form > input {
   width: 300px;
-  height: 50px;
-  border: 3px solid;
-  animation: inputBorder 1s ease infinite;
-}
-
-@keyframes inputBorder {
-  from {
-    border-color: blue;
-  }
-  to {
-    border-color: yellow;
-  }
+  height: 25px;
+  border: 0px;
 }
 
 .todo-section__form-list {
   display: flex;
-  position: absolute;
-  width: 200px;
-  height: 100%;
-  bottom: 200px;
+  width: 305px;
+  height: 350px;
+  /* margin-bottom: 300px; */
 }
 
 #todo-list > li {
+  font-size: 20px;
+  color: white;
   display: flex;
   align-items: center;
   right: 55px;
-  width: 200px;
+  width: 300px;
+  padding-bottom: 5px;
 }
 
 #todo-list > li > span {
   padding-left: 10px;
 }
 
+#todo-list > li > button {
+  border: 0px;
+  opacity: 1;
+  background-color: black;
+  font-size: 20px;
+}
+
 #todo-form > input::placeholder {
-  font-size: 30px;
+  font-size: 15px;
 }
 
 #left-arrow {
-  position: absolute;
   font-size: 25px;
 }
